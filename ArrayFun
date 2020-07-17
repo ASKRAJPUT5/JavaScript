@@ -13,3 +13,22 @@ secretMessage[secretMessage.indexOf("easily")] ="right";
  secretMessage.splice(secretMessage.indexOf("get"),5,"know");
 
 console.log(secretMessage.join());
+
+
+
+// MUTUAL FOLLOWERS
+
+let bobsFollowers = ["ask","ask5","ask55555","ASKRajput5"];
+let tinasFollowers = ["ask5","ASKRajput5","ASK"];
+
+let mutualFollowers = [];
+
+for(let i=0;i< bobsFollowers.length;i++){
+  for(let j = 0; j< tinasFollowers.length;j++){
+    if(bobsFollowers[i]===tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+}
+
+console.log(mutualFollowers);
